@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crazy Apps - Download Latest Android APK Apps for Free.">
+    <title>Crazy Apps - Download APKs and Apps</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Separate CSS file if necessary -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script> <!-- Google Analytics -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXXX-X');  <!-- Replace with your Google Analytics ID -->
+    </script>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #333;
+            padding: 15px 0;
+            color: white;
+            text-align: center;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 70%;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('your-background-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .btn-main {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn-main:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Featured Apps Section */
+        .featured-apps {
+            padding: 40px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        .apps-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .app-item {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .app-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .app-item h3 {
+            margin-top: 10px;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-btn:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Sidebar Ad Section */
+        .sidebar-ad {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 40px 0;
+            background-color: #f4f4f4;
+        }
+        #contact h2 {
+            text-align: center;
+            font-size: 32px;
+        }
+        #contact p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .search-bar input {
+                width: 100%;
+                margin-right: 0;
+            }
+            .apps-list {
+                flex-direction: column;
+            }
+            .app-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#">Crazy Apps</a></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search for APKs...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Download the Latest APKs</h2>
+                <p>Your favorite apps, right at your fingertips. Free and Fast downloads!</p>
+                <a href="#" class="btn-main">Browse Apps</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Apps Section -->
+    <section class="featured-apps">
+        <div class="container">
+            <h2>Featured Apps</h2>
+            <div class="apps-list">
+                <!-- App 1 -->
+                <div class="app-item">
+                    <img src="app1.jpg" alt="App 1">
+                    <h3>App 1</h3>
+                    <p>Version 1.2.3 - Secure & Reliable</p>
+                    <a href="#" class="download-btn">Download</a>
+                </div>
+
+                <!-- App 2 -->
+                <div class="app-item">
+                    <img src="app2.jpg" alt="App 2">
+                    <h3>App 2</h3>
+                    <p>Version 4.5.6 - Easy to use</p>
+                    <a href="#" class="download-btn">Download</a>
+                </div>
+
+                <!-- App 3 -->
+                <div class="app-item">
+                    <img src="app3.jpg" alt="App 3">
+                    <h3>App 3</h3>
+                    <p>Latest APK for Android!</p>
+                    <a href="#" class="download-btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Ad Section -->
+    <section class="sidebar-ad">
+        <div class="container">
+            <p><strong>Ad:</strong> Download premium apps with enhanced features. <a href="#">Click here</a></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us!</p>
+            <p><strong>Phone:</strong> <a href="tel:+923411400146">+923
